@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Curriculum</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form method="POST" action="destination.html">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" tabindex="1" maxlength="30">
+        </p>
+        <p>
+            <label for="apellido">Apellidos</label>
+            <input type="text" name="apellido" id="" tabindex="2" maxlength="80">
+        </p>
+        <p>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="" tabindex="3" minlength="4" maxlength="10">
+        </p>
+        <p>
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="" maxlength="9" pattern="[0-9]{8}[A-Za-z]{1}" value="00000000A" tabindex="4">
+        </p>
+        <p>
+            <label for="sexo">Sexo</label><br>
+            <input type="radio" name="sexo" value="masculino"  tabindex="5">Masculino<br>
+            <input type="radio" name="sexo" value="femenino" tabindex="6">Femenino<br>
+        </p>
+        <p>
+            <label for="fichero">Incluir mi foto</label>
+            <input type="file" name="fichero" id="" tabindex="7">
+        </p>
+        <p>
+            <label for="subscribirse"></label>
+            <input type="checkbox" name="subscribirse" id="" tabindex="8" checked>Subscribirme al boletin de novedades
+        </p>
+        <fieldset>Enviar
+            <p>
+                <input type="submit" value="Guardar Cambios" tabindex="9">
+                <input type="reset" value="Borrar los datos introducidos" tabindex="10">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- asdasd -->
